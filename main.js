@@ -9,7 +9,7 @@ const port = 3000
 
 app.use(bodyParser.json());
 //DB Connect
-mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true}, () => {
+mongoose.connect(process.env.PORT ||3000,{useNewUrlParser: true}, () => {
     console.log("Connected to DB")
 })
 
