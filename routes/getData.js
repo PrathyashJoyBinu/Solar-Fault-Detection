@@ -1,8 +1,13 @@
 const express = require('express')
 const router = express()
 const getDataModels = require('../models/allDataModel')
+const postDataModels = require('../models/timeModel')
 
 
+
+router.get('/',(req, res) =>{
+    res.send("Api service started")
+})
 //Get all time by date.
 router.get("/AllData", async (req, res) => {
 
