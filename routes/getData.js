@@ -23,21 +23,7 @@ router.get("/AllData", async (req, res) => {
 
     // .project({title:1,description:1})
 
-//
-// router.post("/dummy", async (req, res) => {
-//     console.log(req.body.title)
-//     const postData = new postDataModels({
-//         title : req.body.title,
-//         description : req.body.description
-//     })
-//
-//     try {
-//         const savedPost = await postData.save()
-//         res.json(savedPost)
-//     }catch (e) {
-//
-//     }
-// })
+
 
 
 
