@@ -11,7 +11,7 @@ const port = 3000
 app.use(cors())
 app.use(bodyParser.json());
 //DB Connect
-mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true}, () => {
+mongoose.connect("mongodb+srv://snimozadmin:Cyberon123@snimoz.icul9.mongodb.net/anertlog?retryWrites=true&w=majority", {useNewUrlParser: true}, () => {
     console.log("Connected to DB")
 })
 
@@ -20,6 +20,6 @@ mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true}, () => {
 
 app.use('/get',getDataRoute)
 
-app.listen(process.env.PORT||3000,()=>{
+app.listen(process.env.PORT||8000,()=>{
     console.log(`api listening at http://localhost:${port}`)
 })
